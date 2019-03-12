@@ -1,6 +1,6 @@
 {
 	"Dgraph GraphQL +- Base for Queries": {
-		"prefix": "D-GraphQL-base",
+		"prefix": "D-GraphQL-brackets",
 		"body": [
 			"//`{",
 				"",

@@ -51,7 +51,7 @@
 		"description": "Delete a whole Node - If no predicates specified, then all of the nodes outbound edges are deleted (corresponding to deleting S * *):"
 	},
 	"Add one Edge with Facet": {
-		"prefix": "Dgraph-JSON-Add-1Edge",
+		"prefix": "Dgraph-JSON-1EdgeFacet",
 		"body": [
 			"\"${1:Edge}\": {",
 			"  \"uid\": \"_:${2:Blank-0}\",",
