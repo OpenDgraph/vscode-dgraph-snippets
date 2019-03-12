@@ -78,7 +78,7 @@
 	},
 	"Add just a Blank Node": {
 		"prefix": "Dgraph-JSON-BlanKNode",
-		"body": [ "{\"uid\": \"_:${BlankNode}\"}," ],
+		"body": [ "{\"uid\": \"_:${1:BlankNode}\"}," ],
 		"description": "Add just a Blank Node - useful to create list of nodes"
 	},
 	"Dgraph JSON Base mutation": {

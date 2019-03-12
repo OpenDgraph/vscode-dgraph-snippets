@@ -32,7 +32,15 @@
 			},
 			{
 				"language": "javascript",
-				"path": "./snippets/snippets.json"
+				"path": "./snippets/dgraphql.json"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/rdf.json"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/json.json"
 			},
 			{
 				"language": "json",
@@ -40,7 +48,15 @@
 			},
 			{
 				"language": "typescript",
-				"path": "./snippets/snippets.json"
+				"path": "./snippets/dgraphql.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/rdf.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/json.json"
 			}
 		]
 	}
