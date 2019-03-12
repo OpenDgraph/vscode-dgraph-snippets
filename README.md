@@ -2,6 +2,10 @@
 
 This extension for Visual Studio Code adds snippets for Dgraph's Query lang and Mutation lang for RDF files, JSON files e other supported extensions.
 
+e.g:
+
+![Prefixes](/images/cap3.png)
+
 ## Usage
 
 Simple usage is start to write "RDF" or "dgraph" as they are kind of Prefixes.

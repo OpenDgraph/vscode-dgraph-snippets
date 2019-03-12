@@ -10,7 +10,7 @@
 	"engines": {
 		"vscode": "^1.5.0"
 	},
-	"icon": "images/icon.png",
+	"icon": "images/logo.png",
 	"galleryBanner": {
 		"color": "#0c121c",
 		"theme": "dark"

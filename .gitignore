@@ -65,3 +65,8 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Other
+
+*.vsix
+vsc-extension-quickstart.md
