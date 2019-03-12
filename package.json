@@ -1,0 +1,47 @@
+{
+	"name": "vscode-dgraph-snippets",
+	"displayName": "vscode-dgraph-snippets",
+	"version": "0.0.1",
+	"homepage": "https://dgraph.io",
+	"author": "MichelDiz",
+	"publisher": "MichelDiz",
+	"license": "MIT",
+	"description": "Dgraph snippets for RDF, JSON-Dgraph and Queries.",
+	"engines": {
+		"vscode": "^1.5.0"
+	},
+	"icon": "images/icon.png",
+	"galleryBanner": {
+		"color": "#0c121c",
+		"theme": "dark"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/MichelDiz/vscode-dgraph-snippets.git"
+	},
+	"categories": [ "Snippets" ],
+	"keywords": [ "snippets", "dgraph", "graphDB" ],
+	"bugs": {
+		"url": "https://github.com/MichelDiz/vscode-dgraph-snippets/issues"
+	},
+	"contributes": {
+		"snippets": [
+			{
+				"language": "xml",
+				"path": "./snippets/rdf.json"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "json",
+				"path": "./snippets/json.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/snippets.json"
+			}
+		]
+	}
+}

@@ -1,0 +1,52 @@
+{
+	"Basic RDF - Blank_node": {
+		"prefix": "RDF-D",
+		"body": [
+			"<_:${1:Mainsubject}> <name> \"Hamon Tower\" .",
+			"<_:${1:Mainsubject}> <${2:predicate}> \"31\"${3| ,^^<xs:string> ,^^<xs:boolean> ,^^<xs:int> ,^^<xs:float> ,^^<xs:password> ,^^<xs:date> ,^^<xs:dateTime> ,^^<xs:double> ,^^<xs:positiveInteger> ,^^<geo:geojson> ,^^<geo:base64Binary> |}.",
+			"<_:${1:Mainsubject}> <text> \"Аделаида\"${4| ,@ru ,@en ,@fr ,@pl ,@hi |}."
+		],
+		"description": "A basic estructure for RDF with Blank Node"
+	},
+	"Basic RDF - UID": {
+		"prefix": "RDF-D_UID",
+		"body": [
+			"<${1:0x1}> <name> \"Hamon Tower\" .",
+			"<${1:0x1}> <${2:predicate}> \"31\"${3| ,^^<xs:string> ,^^<xs:boolean> ,^^<xs:int> ,^^<xs:float> ,^^<xs:password> ,^^<xs:date> ,^^<xs:dateTime> ,^^<xs:double> ,^^<xs:positiveInteger> ,^^<geo:geojson> ,^^<geo:base64Binary> |}.",
+			"<${1:0x1}> <text> \"Аделаида\"${4|@ru , ,@en ,@fr ,@pl ,@hi |}."
+		],
+		"description": "A basic estructure for RDF with real UIDs"
+	},
+	"Delete in RDF - Single": {
+		"prefix": "RDF-DELETE-SINGLE",
+		"body": [ "     <${1:SET_UID}> <${2:PREDICATE}> \"${3:VALUE}\" .", "", "#Single edge delete", "" ],
+		"description": "A basic estructure for Delete in RDF"
+	},
+	"Delete S P * in RDF": {
+		"prefix": "RDF-DELETE-Multiple",
+		"body": [
+			"     <${1:SET_UID}> <${2:EDGE}> * .",
+			"",
+			"#For a particular node N, all data for predicate P (and corresponding indexing) is removed with the pattern S P *.",
+			""
+		],
+		"description": "A basic estructure for Delete S P * in RDF"
+	},
+	"Delete S * * in RDF - Clean the whole Node": {
+		"prefix": "RDF-DELETE-CLEAN",
+		"body": [
+			"     <${1:SET_UID}> * * .",
+			"",
+			"#The pattern S * * deletes all edges out of a node (the node itself may remain as the target of edges), any reverse edges corresponding to the removed edges and any indexing for the removed data."
+		],
+		"description": "A basic estructure for Delete in RDF - Clean the whole Node"
+	},
+	"A basic estructure for Dgraph RDF for Geolocation": {
+		"prefix": "RDF-GEO",
+		"body": [
+			"<_:${1:Mainsubject}> < loc > \"{'type':'Point','coordinates':[${2:-122.4220186},${3:37.772318}]}\"^^<geo:geojson> .",
+			"<_:${1:Mainsubject}> <name> \"${4:Hamon Tower}\" ."
+		],
+		"description": "A basic estructure for Dgraph RDF for Geolocation"
+	}
+}
