@@ -1,4 +1,4 @@
-# dgraph snippets for vscode.
+# Dgraph snippets for vscode.
 
 This extension for Visual Studio Code adds snippets for Dgraph's Query lang and Mutation lang for RDF files, JSON files e other supported extensions.
 
