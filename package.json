@@ -1,16 +1,17 @@
 {
 	"name": "vscode-dgraph-snippets",
 	"displayName": "vscode-dgraph-snippets",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"homepage": "https://dgraph.io",
 	"author": "MichelDiz",
 	"publisher": "MichelDiz",
 	"license": "MIT",
-	"description": "Dgraph snippets for RDF, JSON-Dgraph and Queries.",
-	"engines": {
-		"vscode": "^1.5.0"
-	},
+	"description": "Dgraph snippets for RDF, JSON-Dgraph and Queries. Also language support.",
+	"engines": { "vscode": "*" },
 	"icon": "images/logo.png",
+	"scripts":{
+		"pack": "vsce package"
+	},
 	"galleryBanner": {
 		"color": "#0c121c",
 		"theme": "dark"
@@ -19,7 +20,7 @@
 		"type": "git",
 		"url": "git+https://github.com/MichelDiz/vscode-dgraph-snippets.git"
 	},
-	"categories": [ "Snippets" ],
+	"categories": [ "Snippets", "Programming Languages" ],
 	"keywords": [ "snippets", "dgraph", "graphDB" ],
 	"bugs": {
 		"url": "https://github.com/MichelDiz/vscode-dgraph-snippets/issues"
@@ -58,6 +59,25 @@
 				"language": "typescript",
 				"path": "./snippets/json.json"
 			}
-		]
+		],
+		"languages": [
+            {
+                "id": "schema",
+                "aliases": [
+                    "Dgraph schema",
+                    "Schema",
+                    "SCHEMA"
+                ],
+                "extensions": [
+                    ".schema"
+                ],
+                "configuration": "./schema/language-configuration.json"
+            }
+        ],
+        "grammars": [{
+            "language": "schema",
+            "scopeName": "source.schema",
+            "path": "./schema/syntaxes/schema.tmLanguage.json"
+        }]
 	}
 }

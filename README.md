@@ -82,4 +82,8 @@ N/A
 
 Initial release of vscode-dgraph-snippets
 
+### 0.0.2
+
+Added language support for .schema file extension.
+
 -----------------------------------------------------------------------------------------------------------

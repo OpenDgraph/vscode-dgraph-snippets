@@ -1,0 +1,111 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Schema",
+	"scopeName": "source.schema",
+	"fileTypes": ["schema"],
+	"patterns": [
+	  {
+		"include": "#comment"
+	  },
+	  {
+		"include": "#type-declaration"
+	  },
+	  {
+		"include": "#variable-declarations"
+	  },
+	  {
+		"include": "#type-field"
+	  },
+	  {
+		"include": "#directive"
+	  },
+	  {
+		"include": "#variable-type"
+	  },
+	  {
+		"include": "#predicates"
+	  }
+	],
+	"repository": {
+	  "comment": {
+		"name": "comment.line.number-sign.schema",
+		"match": "#.*$"
+		},
+		"predicates": {
+			"name": "meta.predicates.schema",
+			"match": "\\s*([_A-Za-z][_0-9A-Za-z]*:)",
+			"captures": {
+				"1": {
+				"name": "variable.parameter.methods.schema"
+				},
+				"2": {
+				"name": "variable.parameter.methods.schema"
+				}
+			}
+			},
+	  "directive": {
+		"name": "meta.directive.schema",
+		"match": "(@)\\s*([_A-Za-z][_0-9A-Za-z]*)",
+		"captures": {
+		  "1": {
+			"name": "entity.name.function"
+		  },
+		  "2": {
+			"name": "entity.name.function"
+		  }
+		}
+	  },
+	  "type-declaration": {
+		"name": "meta.type-declaration.schema",
+		"begin": "(type|Type)\\s+([_A-Za-z][_0-9A-Za-z]+)\\s+((@)\\s*([_A-Za-z][_0-9A-Za-z]*))?\\s*\\{",
+		"end": "\\}",
+		"beginCaptures": {
+		  "1": {
+			"name": "storage.type"
+		  },
+		  "2": {
+			"name": "entity.name.type"
+		  }
+		},
+		"patterns": [
+		  {
+			"include": "#comment"
+		  },
+		  {
+			"include": "#directive"
+		  },
+		  {
+			"include": "#type-field"
+		  },
+		  {
+			"include": "#variable-type"
+		  },
+		  {
+			"include": "#predicates"
+		  }
+		]
+	  },
+	  "type-field": {
+		"name": "entity.section",
+		"match": "[_A-Za-z][_0-9A-Za-z]*(\\s*:)",
+		"captures": {
+		  "1": {
+			"name": "keyword.operator"
+		  }
+		}
+	  },
+	  "variable-name": {
+		"name": "variable.parameter",
+		"match": "\\$[_A-Za-z][_0-9A-Za-z]*"
+	  },
+	  "variable-type": {
+		"name": "meta.variable-type.schema",
+		"match": "([_A-Za-z][_0-9A-Za-z]*)",
+		"captures": {
+		  "1": {
+			"name": "entity.name.type"
+		  }
+		}
+	  }
+	}
+  }
