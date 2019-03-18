@@ -1,0 +1,61 @@
+{
+    "Dgraph Schema": {
+        "prefix": "Dgraphtype",
+        "body": [
+          "type ${1:NameYourType} {",
+          "	 ",
+          "}",
+          ""
+        ],
+        "description": "Dgraph Schema"
+      },
+      "Dgraph Schema predicate": {
+        "prefix": "DgraphPred",
+        "body": [
+          "${1:predicate}: ${2|string,float,bool,int,geo,password|}${3| @index(), |}${4| @lang , |} ${5|@count ., .|}"
+        ],
+        "description": "Dgraph Schema predicate"
+      },
+      "Dgraph Schema predicate as list": {
+        "prefix": "DgraphPred_List",
+        "body": [
+          "${1:predicate}: ${2|[string],[float],[bool],[int],[geo]|} ."
+        ],
+        "description": "Dgraph Schema predicate as list"
+      },
+      "Dgraph Schema Edge": {
+        "prefix": "DgraphEdge",
+        "body": [
+          "${1:predicate}: ${2|uid,[uid]|} ${3|@count , |} ${4|@reverse ., .|}"
+        ],
+        "description": "Dgraph Schema Edge"
+      },
+      "Dgraph Schema predicate Datetime": {
+        "prefix": "DgraphPred_Date",
+        "body": [
+          "${1:predicate}: ${2|dateTime,[dateTime]|} ."
+        ],
+        "description": "Dgraph Schema Datetime"
+      },
+      "Dgraph Schema Index Datetime": {
+        "prefix": "DgraphIndex_Date",
+        "body": [
+          "${1|hour,day,month,year,hour\\,day\\,month\\,year|}"
+        ],
+        "description": "Dgraph Schema Index Datetime"
+      },
+      "Dgraph Schema Index String": {
+        "prefix": "DgraphIndex_String",
+        "body": [
+          "${1|hash,term,exact,trigram,fulltext,hash\\,term\\,exact\\,trigram\\,fulltext|}"
+        ],
+        "description": "Dgraph Schema Index String"
+      },
+      "Dgraph Schema Index Int": {
+        "prefix": "DgraphIndex_Int_others",
+        "body": [
+          "${1|float,bool,int,geo|}"
+        ],
+        "description": "Dgraph Schema Index Int, Boolean, Float and geo"
+      }
+}

@@ -28,6 +28,10 @@
 	"contributes": {
 		"snippets": [
 			{
+				"language": "schema",
+				"path": "./snippets/schema.json"
+			},
+			{
 				"language": "xml",
 				"path": "./snippets/rdf.json"
 			},
