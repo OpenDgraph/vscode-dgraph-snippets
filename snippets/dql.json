@@ -1,18 +1,18 @@
 {
-	"Dgraph GraphQL +- Base for Queries": {
-		"prefix": "D-GraphQL-brackets",
+	"Dgraph DQL Base for Queries": {
+		"prefix": "DQL-brackets",
 		"body": [
 			"//`{",
 				"",
-			" add your first block here - write \"dgraphql\" ",
+			" add your first block here - write \"DQL\" ",
 			"",
 			"//}` //uncomment curly brackets when finished assembling your query",
 			""
 		],
-		"description": "Dgraph GraphQL +- Base for Queries"
+		"description": "Dgraph DQL Base for Queries"
 	},
-	"Dgraph GraphQL +- Query Block": {
-		"prefix": "D-GraphQL",
+	"Dgraph DQL Query Block": {
+		"prefix": "DQL",
 		"body": [
 		  "  ${1:QueryTitle}(func: ${2:Function}(${3:attr}, ${4:argument})) {",
 		  "    uid",
@@ -20,26 +20,26 @@
 		  "  }",
 		  ""
 		],
-		"description": "Dgraph GraphQL +- Query base"
+		"description": "Dgraph DQL Query base"
 		},
-		"Dgraph GraphQL +- Expand All and expand edges": {
-			"prefix": "D-GraphQL_ExpandEdges",
+		"Dgraph DQL Expand All and expand edges": {
+			"prefix": "DQL-ExpandEdges",
 			"body": [
 				"  ${1:QueryTitle}(func: ${2:Function}(${3:attr}, \"${4:argument}\")) {",
 				"    uid",
 				"    expand(_all_){ uid expand(_all_) }",
 				"  }"
 			],
-			"description": "Dgraph GraphQL +- Expand All and expand edges"
+			"description": "Dgraph DQL Expand All and expand edges"
 		},
-		"Dgraph GraphQL +- Recurse Query": {
-			"prefix": "D-GraphQL-Recurse",
+		"Dgraph DQL Recurse Query": {
+			"prefix": "DQL-Recurse",
 			"body": [
 				"  ${1:QueryTitle}(func: ${2:Function}(${3:attr}, ${4:argument})) @recurse(depth: ${5:depthArg}, loop: ${6|true,false|}) {",
 				"    uid",
 				"    expand(_all_){ uid expand(_all_) }",
 				"  }"
 			],
-			"description": "Dgraph GraphQL +- Recurse Query"
+			"description": "Dgraph DQL Recurse Query"
 		}
 }

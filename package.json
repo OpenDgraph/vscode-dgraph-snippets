@@ -1,7 +1,7 @@
 {
 	"name": "vscode-dgraph-snippets",
 	"displayName": "vscode-dgraph-snippets",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"homepage": "https://dgraph.io",
 	"author": "MichelDiz",
 	"publisher": "MichelDiz",
@@ -37,7 +37,7 @@
 			},
 			{
 				"language": "javascript",
-				"path": "./snippets/dgraphql.json"
+				"path": "./snippets/dql.json"
 			},
 			{
 				"language": "javascript",
@@ -53,7 +53,7 @@
 			},
 			{
 				"language": "typescript",
-				"path": "./snippets/dgraphql.json"
+				"path": "./snippets/dql.json"
 			},
 			{
 				"language": "typescript",

@@ -33,14 +33,14 @@ Simple usage is start to write "RDF" or "dgraph" as they are kind of Prefixes.
 * javascript(.js)
 * typescript(.ts)
 
-## Graphql +- Snippets
+## DQL Snippets
 
 |        Snippet          |         Description         |
 | ----------------------- | --------------------------- |
-| `D-GraphQL-brackets`    | Create curly brackets       |
-| `D-GraphQL`             | Query base for all func     |
-| `D-GraphQL_ExpandEdges` | Expand All and expand edges |
-| `D-GraphQL-Recurse`     | Query base for all func     |
+| `DQL-brackets`    | Create curly brackets       |
+| `DQL`             | Query base for all func     |
+| `DQL_ExpandEdges` | Expand All and expand edges |
+| `DQL-Recurse`     | Query base for all func     |
 
 ## RDF Snippets
 
